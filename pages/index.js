@@ -530,7 +530,7 @@ const Home = (props) => {
           }
           rootClassName="footer-mobileroot-class-name"
         ></FooterMobile>
-        
+        </div>
       <style jsx>
         {`
           .home-container1 {
