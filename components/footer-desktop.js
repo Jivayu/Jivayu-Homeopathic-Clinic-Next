@@ -232,9 +232,9 @@ const FooterDesktop = (props) => {
             background-image: linear-gradient(
                 270deg,
                 rgba(255, 255, 255, 0) 0%,
-                rgba(0, 0, 0, 0.69) 100%
+                rgba(0, 0, 0, 0.55) 100%
               ),
-              url('/images/bckimg-1500w.webp');
+              url('/images/bckimg-1500h.webp');
             background-repeat: left, no-repeat;
             background-position: left;
             border-bottom-left-radius: 0;
@@ -254,6 +254,7 @@ const FooterDesktop = (props) => {
             border-radius: var(--dl-layout-radius-buttonradius);
             padding-right: var(--dl-layout-space-oneandhalfunits);
             padding-bottom: var(--dl-layout-space-oneandhalfunits);
+            backdrop-filter: blur(3px);
             background-size: contain;
             justify-content: space-between;
             background-image: url('/images/footer-backgrnd-1500h.webp');
@@ -282,7 +283,7 @@ const FooterDesktop = (props) => {
                 rgba(189, 195, 199, 0.15) 0%,
                 rgba(0, 0, 0, 0.47) 100%
               ),
-              url('/images/bckimg-1500w.webp');
+              url('/images/bckimg-1500h.webp');
             background-repeat: no-repeat;
             border-right-width: 0px;
             background-position: center;
@@ -352,7 +353,7 @@ const FooterDesktop = (props) => {
             font-style: normal;
             text-align: center;
             font-family: 'Inter';
-            font-weight: 400;
+            font-weight: 300;
             line-height: 1.4;
             padding-left: var(--dl-layout-space-halfunit);
             margin-bottom: 2px;
@@ -367,7 +368,7 @@ const FooterDesktop = (props) => {
             font-style: normal;
             text-align: center;
             font-family: 'Inter';
-            font-weight: 400;
+            font-weight: 300;
             line-height: 1.4;
             padding-left: var(--dl-layout-space-halfunit);
             margin-bottom: 2px;
@@ -382,7 +383,7 @@ const FooterDesktop = (props) => {
             font-style: normal;
             text-align: center;
             font-family: 'Inter';
-            font-weight: 400;
+            font-weight: 300;
             line-height: 1.4;
             padding-left: var(--dl-layout-space-halfunit);
             margin-bottom: 2px;
@@ -748,10 +749,9 @@ const FooterDesktop = (props) => {
             letter-spacing: auto;
           }
           .footer-desktop-container28 {
-            width: 35%;
+            width: 300px;
             display: flex;
             align-self: stretch;
-            align-items: center;
             padding-top: var(--dl-layout-space-unit);
             border-color: var(--dl-color-theme-primary2);
             border-style: solid;
@@ -889,6 +889,9 @@ const FooterDesktop = (props) => {
             fill: var(--dl-color-theme-neutral-light);
             color: #ffffff;
             font-size: 10px;
+            font-style: normal;
+            font-family: 'Inter';
+            font-weight: 300;
           }
           .footer-desktop-container31 {
             flex: 0 0 auto;
@@ -911,6 +914,9 @@ const FooterDesktop = (props) => {
             fill: var(--dl-color-theme-neutral-light);
             color: #ffffff;
             font-size: 10px;
+            font-style: normal;
+            font-family: 'Inter';
+            font-weight: 300;
           }
           .footer-desktop-container32 {
             flex: 0 0 auto;
@@ -936,6 +942,9 @@ const FooterDesktop = (props) => {
             fill: var(--dl-color-theme-neutral-light);
             color: #ffffff;
             font-size: 10px;
+            font-style: normal;
+            font-family: 'Inter';
+            font-weight: 300;
           }
           .footer-desktop-text25 {
             display: inline-block;

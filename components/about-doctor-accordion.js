@@ -174,8 +174,9 @@ const AboutDoctorAccordion = (props) => {
             fill: var(--dl-color-theme-neutral-dark);
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
+            font-style: normal;
             font-family: 'Inter';
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
             border-color: rgba(220, 21, 205, 0.35);
             border-width: 0.6px;
@@ -201,8 +202,9 @@ const AboutDoctorAccordion = (props) => {
             fill: var(--dl-color-theme-neutral-dark);
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
+            font-style: normal;
             font-family: 'Inter';
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
             border-color: rgba(220, 21, 205, 0.35);
             border-width: 0.6px;
@@ -228,8 +230,9 @@ const AboutDoctorAccordion = (props) => {
             fill: var(--dl-color-theme-neutral-dark);
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
+            font-style: normal;
             font-family: 'Inter';
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
             margin-bottom: var(--dl-layout-space-halfunit);
             letter-spacing: 1px;

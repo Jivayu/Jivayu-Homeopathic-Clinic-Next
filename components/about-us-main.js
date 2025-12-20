@@ -900,6 +900,7 @@ const AboutUsMain = (props) => {
           }
           .about-us-mainroot-class-name {
             position: static;
+            margin-top: var(--dl-layout-space-halfunit);
           }
           @media (max-width: 1200px) {
             .about-us-main-container10 {

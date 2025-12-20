@@ -74,7 +74,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                "<script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>\n<style>\n  html {\n    scroll-behavior: smooth;\n  }\n</style>\n<import { SpeedInsights } from \"@vercel/speed-insights/next\">\n        <script defer src='https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js'></script>",
+                "<script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>\r\n<style>\r\n  html {\r\n    scroll-behavior: smooth;\r\n  }\r\n</style>\n        <script defer src='https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js'></script>",
             }}
           ></div>
         </body>
