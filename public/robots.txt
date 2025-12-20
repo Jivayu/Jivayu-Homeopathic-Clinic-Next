@@ -1,7 +1,19 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
 
-Sitemap: https://jscheck.teleporthq.app/sitemap.xml
+# Block bots from crawling backend API routes (Common in Next.js/Node apps)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+
+# Keep your specific test folder blocked
+Disallow: /nogooglebot/
+
+# Optimization: Explicitly allow Googlebot-Image to index your gallery
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /uploads/
+
+# CORRECTED SITEMAP LINK (Must be the full absolute URL)
+Sitemap: {{https://jivayu.in}}/sitemap.xml
