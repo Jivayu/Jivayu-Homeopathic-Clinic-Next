@@ -34,7 +34,7 @@ const Contacts = (props) => {
           />
           <link
             rel="canonical"
-            href="https://jivayu.in/clinic-location-in-nagpur"
+            href="https://jivayu.in/contacts"
           />
         </Head>
         <NavbarInteractiveMobile
