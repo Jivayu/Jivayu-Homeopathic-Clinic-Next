@@ -68,6 +68,7 @@ const HeroMobile = (props) => {
                 sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
                 src="/images/homeopathic%20consultations-1200h.webp"
                 srcSet="/images/homeopathic%20consultations-1200h.webp 1200w, /images/homeopathic%20consultations-tablet.webp 800w, /images/homeopathic%20consultations-mobile.webp 480w"
+                priority={true}
                 className="hero-mobile-image2"
               />
             </div>
