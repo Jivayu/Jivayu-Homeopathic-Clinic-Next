@@ -15,7 +15,7 @@ const Contacts = (props) => {
     <>
       <div className="contacts-container1">
         <Head>
-          <title>Homeopathic Doctor | Clinic Location</title>
+          <title>Contact & Clinic Location | Jivayu Homeopathy Nagpur</title>
           <meta
             name="description"
             content="Homeopathic Consultation With Dr. Priyanka A Vishwakarma at Jivayu Homeopathic Clinic  in Nagpur. Visit Via Google Location."
