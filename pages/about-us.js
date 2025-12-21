@@ -15,18 +15,18 @@ const AboutUs = (props) => {
     <>
       <div className="about-us-container1">
         <Head>
-          <title>Homeopathic Doctor | Dr. Priyanka Vishwakarma</title>
+          <title>About Dr. Priyanka Vishwakarma | Jivayu Homeopathy Nagpur</title>
           <meta
             name="description"
-            content="Meet Dr. Priyanka A Vishwakarma at Jivayu Homeopathy in Nagpur. We provide trusted, holistic family healthcare where your time and health are valued."
+            content="Learn about Dr. Priyanka Vishwakarma, a leading Homeopathic doctor in Wanadongri, Nagpur. dedicated to natural and safe healing at Jivayu Clinic."
           />
           <meta
             property="og:title"
-            content="Homeopathic Doctor | Dr. Priyanka Vishwakarma"
+            content="About Dr. Priyanka Vishwakarma | Jivayu Homeopathy Nagpur"
           />
           <meta
             property="og:description"
-            content="Restore your health naturally with Dr. Priyanka A. Vishwakarma. Safe, effective homeopathic treatments for skin, hair, and chronic ailments. Click to book your visit."
+            content="Learn about Dr. Priyanka Vishwakarma, a leading Homeopathic doctor in Wanadongri, Nagpur. dedicated to natural and safe healing at Jivayu Clinic."
           />
           <meta
             property="og:image"
