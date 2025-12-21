@@ -33,7 +33,7 @@ const Home = (props) => {
             property="og:image"
             content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/febb924d-f351-4876-832a-cc978a689445/fc6f114e-5526-4eb4-a910-e5ebfc2c17da?org_if_sml=1&amp;q=80&amp;force_format=original"
           />
-          <link rel="canonical" href="https://jscheck.teleporthq.app/" />
+          <link rel="canonical" href="https://jivayu.in/" />
         </Head>
         <NavbarInteractiveMobile
           text={
