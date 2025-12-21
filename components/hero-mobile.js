@@ -21,6 +21,7 @@ const HeroMobile = (props) => {
                 sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
                 src="/images/consultation-1200h.webp"
                 srcSet="/images/consultation-1200h.webp 1200w, /images/consultation-tablet.webp 800w, /images/consultation-mobile.webp 480w"
+                priority={true}
                 className="hero-mobile-image1"
               />
               <h1 className="hero-mobile-text10">
