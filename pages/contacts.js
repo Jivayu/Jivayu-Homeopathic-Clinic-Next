@@ -18,15 +18,15 @@ const Contacts = (props) => {
           <title>Contact & Clinic Location | Jivayu Homeopathy Nagpur</title>
           <meta
             name="description"
-            content="Homeopathic Consultation With Dr. Priyanka A Vishwakarma at Jivayu Homeopathic Clinic  in Nagpur. Visit Via Google Location."
+            content="Visit Jivayu Homeopathy Clinic. We are located in Wanadongri, Hingna Road, Nagpur. Call Dr. Priyanka Vishwakarma for Appointments."
           />
           <meta
             property="og:title"
-            content="Homeopathic Doctor | Clinic Location"
+            content="Contact & Clinic Location | Jivayu Homeopathy Nagpur"
           />
           <meta
             property="og:description"
-            content="Restore your health naturally with Dr. Priyanka A. Vishwakarma. Safe, effective homeopathic treatments for skin, hair, and chronic ailments. Click to book your visit."
+            content="Visit Jivayu Homeopathy Clinic. We are located in Wanadongri, Hingna Road, Nagpur. Call Dr. Priyanka Vishwakarma for Appointments."
           />
           <meta
             property="og:image"
