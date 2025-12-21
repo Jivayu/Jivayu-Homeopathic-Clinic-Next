@@ -32,7 +32,7 @@ const AboutUs = (props) => {
             property="og:image"
             content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/febb924d-f351-4876-832a-cc978a689445/5b3e8592-8d1e-4a94-b316-5581eecbdacb?org_if_sml=1&amp;q=80&amp;force_format=original"
           />
-          <link rel="canonical" href="https://jivayu.in/homeopathic-doctor" />
+          <link rel="canonical" href="https://jivayu.in/about-us" />
         </Head>
         <NavbarInteractiveMobile
           text={
