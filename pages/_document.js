@@ -48,6 +48,12 @@ class CustomDocument extends Document {
             rel="stylesheet"
             href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
           ></link>
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html:
+                "</noscript><script>\r\n  // 1. Initialize dataLayer immediately (Critical so pushes don't fail)\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n\r\n  // 2. The Delayed Loader Function\r\n  (function() {\r\n    var gtmId = 'GTM-5ZK6WDS'; \r\n    var gtmLoaded = false;\r\n\r\n    function loadGTM() {\r\n        if (gtmLoaded) return;\r\n        gtmLoaded = true;\r\n\r\n        // The Standard GTM Snippet (Wrapped to execute later)\r\n        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n        })(window,document,'script','dataLayer', gtmId);\r\n\r\n        // Remove listeners so it doesn't try to load again\r\n        ['mousemove', 'touchstart', 'scroll', 'keydown'].forEach(function(e) {\r\n            window.removeEventListener(e, loadGTM);\r\n        });\r\n    }\r\n\r\n    // Trigger 1: Load on User Interaction (Mouse, Touch, Scroll)\r\n    ['mousemove', 'touchstart', 'scroll', 'keydown'].forEach(function(e) {\r\n        window.addEventListener(e, loadGTM, { passive: true });\r\n    });\r\n\r\n    // Trigger 2: Fallback - Load automatically after 4 seconds (Safety net)\r\n    setTimeout(loadGTM, 4000);\r\n  })();\r\n</script><noscript>",
+            }}
+          ></noscript>
         </Head>
         <body>
           <Main></Main>
@@ -64,17 +70,10 @@ class CustomDocument extends Document {
                 "window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', '325427178');",
             }}
           ></script>
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html:
-                "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,'script','dataLayer','GTM-5ZK6WDS');",
-            }}
-          ></script>
           <div
             dangerouslySetInnerHTML={{
               __html:
-                "<script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>\r\n<style>\r\n  html {\r\n    scroll-behavior: smooth;\r\n  }\r\n</style>\n        <script defer src='https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js'></script>",
+                '<script data-section-id=\'navbar\' src=\'https://unpkg.com/@teleporthq/teleport-custom-scripts\'></script>\r\n<style>\r\n  html {\r\n    scroll-behavior: smooth;\r\n  }\r\n</style>\r\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZK6WDS" height="0" width="0"\r\n    style="display:none;visibility:hidden"></iframe></noscript>\n        <script defer src=\'https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js\'></script>',
             }}
           ></div>
         </body>

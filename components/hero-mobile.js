@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 import Slider from './slider'
+import HeroImage from './hero-image'
+import HConsultationImage from './h-consultation-image'
 import GoogleProfileRatingsMobile from './google-profile-ratings-mobile'
 
 const HeroMobile = (props) => {
@@ -16,14 +18,7 @@ const HeroMobile = (props) => {
               <Slider rootClassName="sliderroot-class-name4"></Slider>
             </div>
             <div className="hero-mobile-container5">
-              <img
-                alt={props.imageAlt1}
-                sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
-                src="/images/consultation-1200h.webp"
-                srcSet="/images/consultation-1200h.webp 1200w, /images/consultation-tablet.webp 800w, /images/consultation-mobile.webp 480w"
-                priority={true}
-                className="hero-mobile-image1"
-              />
+              <HeroImage></HeroImage>
               <h1 className="hero-mobile-text10">
                 {props.heading ?? (
                   <Fragment>
@@ -63,14 +58,7 @@ const HeroMobile = (props) => {
                   )}
                 </span>
               </animate-on-reveal>
-              <img
-                alt={props.imageAlt3}
-                sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
-                src="/images/homeopathic%20consultations-1200h.webp"
-                srcSet="/images/homeopathic%20consultations-1200h.webp 1200w, /images/homeopathic%20consultations-tablet.webp 800w, /images/homeopathic%20consultations-mobile.webp 480w"
-                priority={true}
-                className="hero-mobile-image2"
-              />
+              <HConsultationImage></HConsultationImage>
             </div>
           </div>
           <div className="hero-mobile-container6">
@@ -220,11 +208,6 @@ const HeroMobile = (props) => {
             padding-bottom: var(--dl-layout-space-unit);
             justify-content: flex-end;
           }
-          .hero-mobile-image1 {
-            width: 20em;
-            align-self: center;
-            object-fit: cover;
-          }
           .hero-mobile-text10 {
             font-size: 1.5em;
             align-self: center;
@@ -262,10 +245,6 @@ const HeroMobile = (props) => {
             border-top-right-radius: var(--dl-layout-radius-radius4);
             border-bottom-left-radius: var(--dl-layout-radius-radius4);
             border-bottom-right-radius: var(--dl-layout-radius-buttonradius);
-          }
-          .hero-mobile-image2 {
-            width: 200px;
-            object-fit: cover;
           }
           .hero-mobile-container6 {
             flex: 0 0 auto;
@@ -384,10 +363,9 @@ const HeroMobile = (props) => {
           @media (max-width: 767px) {
             .hero-mobile-container1 {
               width: 100%;
-              height: 850px;
+              height: 800px;
               display: flex;
               margin-top: var(--dl-layout-space-unit);
-              max-height: 150vh;
               align-items: center;
               flex-direction: row;
             }
@@ -406,12 +384,6 @@ const HeroMobile = (props) => {
               height: 100%;
               position: relative;
               justify-content: flex-end;
-            }
-            .hero-mobile-image1 {
-              width: 24em;
-              align-self: center;
-              border-radius: var(--dl-layout-radius-buttonradius);
-              margin-bottom: var(--dl-layout-space-unit);
             }
             .hero-mobile-text10 {
               display: none;
@@ -436,14 +408,6 @@ const HeroMobile = (props) => {
               margin-left: 0px;
               border-color: rgba(8, 28, 21, 0);
               letter-spacing: 0.9px;
-            }
-            .hero-mobile-image2 {
-              top: -6px;
-              left: 0px;
-              right: 0px;
-              width: var(--dl-layout-size-xlarge);
-              margin: auto;
-              position: absolute;
             }
             .hero-mobile-container6 {
               gap: var(--dl-layout-space-halfunit);
@@ -520,13 +484,6 @@ const HeroMobile = (props) => {
               font-style: normal;
               font-weight: 500;
             }
-            .hero-mobile-image2 {
-              top: -75px;
-              left: 20px;
-              width: var(--dl-layout-size-xlarge);
-              margin: auto;
-              margin-left: auto;
-            }
             .hero-mobile-container6 {
               gap: 0;
               align-self: stretch;
@@ -547,21 +504,17 @@ const HeroMobile = (props) => {
 }
 
 HeroMobile.defaultProps = {
-  imageAlt3: 'image',
   heading: undefined,
   heading1: undefined,
   text811: undefined,
-  imageAlt1: 'image',
   rootClassName: '',
   text6: undefined,
 }
 
 HeroMobile.propTypes = {
-  imageAlt3: PropTypes.string,
   heading: PropTypes.element,
   heading1: PropTypes.element,
   text811: PropTypes.element,
-  imageAlt1: PropTypes.string,
   rootClassName: PropTypes.string,
   text6: PropTypes.element,
 }

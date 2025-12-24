@@ -394,12 +394,8 @@ const AccordionMobile = (props) => {
             display: flex;
             position: relative;
             align-items: center;
-            padding-top: var(--dl-layout-space-unit);
-            padding-left: var(--dl-layout-space-oneandhalfunits);
             border-radius: var(--dl-layout-radius-buttonradius);
-            padding-right: var(--dl-layout-space-oneandhalfunits);
             flex-direction: column;
-            padding-bottom: var(--dl-layout-space-unit);
           }
           .accordion-mobile-text11 {
             fill: var(--dl-color-theme-neutral-dark);
@@ -456,7 +452,6 @@ const AccordionMobile = (props) => {
             display: flex;
             align-self: center;
             align-items: flex-start;
-            border-radius: var(--dl-layout-radius-radius4);
             flex-direction: column;
             justify-content: center;
             border-top-left-radius: var(--dl-layout-radius-buttonradius);
@@ -505,11 +500,7 @@ const AccordionMobile = (props) => {
             display: flex;
             position: relative;
             align-items: center;
-            padding-top: var(--dl-layout-space-unit);
-            padding-left: var(--dl-layout-space-oneandhalfunits);
-            padding-right: var(--dl-layout-space-oneandhalfunits);
             flex-direction: column;
-            padding-bottom: var(--dl-layout-space-unit);
           }
           .accordion-mobile-container13 {
             flex: 0 0 auto;
@@ -541,7 +532,6 @@ const AccordionMobile = (props) => {
             display: flex;
             transform: scale(0.8);
             align-self: center;
-            transition: 0.5s;
             align-items: center;
             border-color: var(--dl-color-theme-accent1);
             border-width: 1px;
@@ -551,20 +541,6 @@ const AccordionMobile = (props) => {
             flex-direction: column;
             justify-content: center;
             background-color: rgba(220, 21, 205, 0.14);
-          }
-          .accordion-mobile-container14:hover {
-            transform: scale(0.8);
-            box-shadow: -5px -10px 25px 0px rgba(49, 105, 82, 0.34);
-            transition: 0.5s;
-            align-items: center;
-            border-color: rgba(64, 145, 108, 0.4);
-            border-radius: var(--dl-layout-radius-radius4);
-            justify-content: center;
-            background-color: rgba(247, 242, 242, 0.3);
-            border-top-left-radius: var(--dl-layout-radius-buttonradius);
-            border-top-right-radius: var(--dl-layout-radius-buttonradius);
-            border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
-            border-bottom-right-radius: var(--dl-layout-radius-buttonradius);
           }
           .accordion-mobile-button1 {
             fill: var(--dl-color-theme-primary1);
@@ -620,7 +596,6 @@ const AccordionMobile = (props) => {
             display: flex;
             transform: scale(0.8);
             align-self: center;
-            transition: 0.5s;
             align-items: center;
             border-color: var(--dl-color-theme-accent1);
             border-width: 1px;
@@ -630,20 +605,6 @@ const AccordionMobile = (props) => {
             flex-direction: column;
             justify-content: center;
             background-color: rgba(220, 21, 205, 0.14);
-          }
-          .accordion-mobile-container16:hover {
-            transform: scale(0.8);
-            box-shadow: -5px -10px 25px 0px rgba(49, 105, 82, 0.34);
-            transition: 0.5s;
-            align-items: center;
-            border-color: rgba(64, 145, 108, 0.4);
-            border-radius: var(--dl-layout-radius-radius4);
-            justify-content: center;
-            background-color: rgba(247, 242, 242, 0.3);
-            border-top-left-radius: var(--dl-layout-radius-buttonradius);
-            border-top-right-radius: var(--dl-layout-radius-buttonradius);
-            border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
-            border-bottom-right-radius: var(--dl-layout-radius-buttonradius);
           }
           .accordion-mobile-button2 {
             fill: var(--dl-color-theme-primary1);
@@ -805,6 +766,12 @@ const AccordionMobile = (props) => {
               width: 100%;
               display: flex;
               align-items: center;
+              border-radius: var(--dl-layout-radius-buttonradius);
+            }
+            .accordion-mobile-accordion1 {
+              gap: 0;
+              backdrop-filter: blur(5px);
+              justify-content: space-between;
             }
             .accordion-mobile-thq-trigger-elm1 {
               border-color: rgba(14, 58, 47, 0.55);
@@ -824,7 +791,7 @@ const AccordionMobile = (props) => {
               text-decoration: none;
             }
             .accordion-mobile-thq-content-elm1 {
-              box-shadow: -3px 3px 15px 0px rgba(2, 2, 2, 0.15);
+              box-shadow: -3px 3px 5px -1px rgba(2, 2, 2, 0.3);
               border-radius: var(--dl-layout-radius-cardradius);
               border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
               border-bottom-right-radius: var(--dl-layout-radius-buttonradius);
@@ -833,8 +800,11 @@ const AccordionMobile = (props) => {
               gap: var(--dl-layout-space-unit);
               display: flex;
               align-items: flex-start;
+              padding-top: var(--dl-layout-space-unit);
+              padding-left: var(--dl-layout-space-oneandhalfunits);
+              padding-right: var(--dl-layout-space-unit);
               flex-direction: column;
-              backdrop-filter: blur(3px);
+              padding-bottom: var(--dl-layout-space-oneandhalfunits);
             }
             .accordion-mobile-text11 {
               width: 100%;
@@ -867,8 +837,10 @@ const AccordionMobile = (props) => {
               border-bottom-width: 0.6px;
             }
             .accordion-mobile-accordion2 {
-              border-bottom-left-radius: var(--dl-layout-radius-radius8);
-              border-bottom-right-radius: var(--dl-layout-radius-radius8);
+              gap: 0;
+              border-radius: var(--dl-layout-radius-buttonradius);
+              backdrop-filter: blur(5px);
+              justify-content: space-between;
             }
             .accordion-mobile-thq-trigger-elm2 {
               border-color: rgba(14, 58, 47, 0.54);
@@ -889,7 +861,7 @@ const AccordionMobile = (props) => {
             }
             .accordion-mobile-thq-content-elm2 {
               align-self: center;
-              box-shadow: -3px 3px 15px 0px rgba(2, 2, 2, 0.15);
+              box-shadow: -3px 3px 5px -1px rgba(2, 2, 2, 0.3);
               border-radius: var(--dl-layout-radius-radius4);
               border-top-left-radius: var(--dl-layout-radius-cardradius);
               border-top-right-radius: var(--dl-layout-radius-cardradius);
@@ -900,8 +872,9 @@ const AccordionMobile = (props) => {
               gap: var(--dl-layout-space-unit);
               display: flex;
               align-items: flex-start;
+              padding-top: var(--dl-layout-space-unit);
               flex-direction: column;
-              backdrop-filter: blur(3px);
+              padding-bottom: var(--dl-layout-space-unit);
               justify-content: center;
               border-left-width: 0px;
               border-right-width: 0px;
@@ -926,9 +899,9 @@ const AccordionMobile = (props) => {
               text-decoration: none;
             }
             .accordion-mobile-container14 {
-              width: 100%;
+              width: 80%;
               height: 55px;
-              border-color: rgba(220, 21, 205, 0.17);
+              border-color: rgba(220, 21, 205, 0.25);
               backdrop-filter: blur(5px);
               background-color: rgba(220, 21, 205, 0.08);
             }
@@ -955,9 +928,9 @@ const AccordionMobile = (props) => {
               text-decoration: none;
             }
             .accordion-mobile-container16 {
-              width: 100%;
+              width: 80%;
               height: 55px;
-              border-color: rgba(220, 21, 205, 0.17);
+              border-color: rgba(220, 21, 205, 0.25);
               backdrop-filter: blur(5px);
               background-color: rgba(220, 21, 205, 0.08);
             }
@@ -969,7 +942,7 @@ const AccordionMobile = (props) => {
             .accordion-mobile-container17 {
               align-items: center;
               padding-top: var(--dl-layout-space-halfunit);
-              padding-bottom: var(--dl-layout-space-halfunit);
+              padding-bottom: var(--dl-layout-space-unit);
               backdrop-filter: blur(3px);
             }
             .accordion-mobile-container18 {

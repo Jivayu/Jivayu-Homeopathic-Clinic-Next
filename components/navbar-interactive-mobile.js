@@ -481,6 +481,7 @@ const NavbarInteractiveMobile = (props) => {
               justify-content: center;
             }
             .navbar-interactive-mobile-thq-login-elm2 {
+              font-family: Inter;
               margin-right: 0px;
             }
             .navbar-interactive-mobile-text17 {

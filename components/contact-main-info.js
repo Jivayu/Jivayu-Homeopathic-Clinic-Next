@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 import Slider from './slider'
+import MapComponent from './map-component'
 
 const ContactMainInfo = (props) => {
   return (
@@ -13,11 +14,7 @@ const ContactMainInfo = (props) => {
           <Slider rootClassName="sliderroot-class-name7"></Slider>
         </div>
         <div className="contact-main-info-container3">
-          <iframe
-            src="https://www.google.com/maps?q=Jivayu Homeopathy Clinic&amp;output=embed"
-            address="Jivayu Homeopathy Clinic"
-            className="contact-main-info-google-maps"
-          ></iframe>
+          <MapComponent></MapComponent>
         </div>
         <div className="contact-main-info-container4">
           <img
@@ -27,14 +24,14 @@ const ContactMainInfo = (props) => {
           />
           <h1 className="contact-main-info-text1">
             {props.heading1 ?? (
-              <Fragment>
+              <Fragment className="contact-main-info-fragment1">
                 <span className="contact-main-info-text5">9823203912</span>
               </Fragment>
             )}
           </h1>
           <h1 className="contact-main-info-text2">
             {props.heading ?? (
-              <Fragment>
+              <Fragment className="contact-main-info-fragment3">
                 <span className="contact-main-info-text7">
                   Book Your Personalize Homeopathic Consultation Now !
                 </span>
@@ -45,7 +42,7 @@ const ContactMainInfo = (props) => {
         <div className="contact-main-info-container5">
           <h1 className="contact-main-info-text3">
             {props.heading12 ?? (
-              <Fragment>
+              <Fragment className="contact-main-info-fragment2">
                 <span className="contact-main-info-text6">
                   Rajiv Nagar, Beside Indian Auto Gas pump, Front of Orient
                   hotel, Hingna Road, Nagpur, Maharashtra, 440016
@@ -55,13 +52,26 @@ const ContactMainInfo = (props) => {
           </h1>
           <h1 className="contact-main-info-text4">
             {props.heading3 ?? (
-              <Fragment>
+              <Fragment className="contact-main-info-fragment4">
                 <span className="contact-main-info-text8">
                   Reach Us Via Google Profile
                 </span>
               </Fragment>
             )}
           </h1>
+        </div>
+        <div
+          data-node-id="TQ_contact_info_email"
+          className="contact-main-info-thq-container6-elm"
+        >
+          <h1
+            data-node-id="TQ_email_label"
+            className="contact-main-info-thq-text18-elm"
+          ></h1>
+          <h1
+            data-node-id="TQ_email_value"
+            className="contact-main-info-thq-text20-elm"
+          ></h1>
         </div>
       </div>
       <style jsx>
@@ -91,16 +101,12 @@ const ContactMainInfo = (props) => {
           }
           .contact-main-info-container3 {
             width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             align-self: center;
             align-items: stretch;
             flex-direction: column;
             justify-content: space-between;
-          }
-          .contact-main-info-google-maps {
-            width: 100%;
-            height: 450px;
-            align-self: center;
           }
           .contact-main-info-container4 {
             width: 100%;
@@ -211,20 +217,84 @@ const ContactMainInfo = (props) => {
             animation-iteration-count: 1;
             animation-timing-function: linear;
           }
+          .contact-main-info-thq-container6-elm {
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: relative;
+            align-self: flex-start;
+            margin-top: var(--dl-layout-space-halfunit);
+            align-items: center;
+            padding-left: var(--dl-layout-space-unit);
+            border-radius: var(--dl-layout-radius-inputradius);
+            flex-direction: row;
+            padding-bottom: var(--dl-layout-space-halfunit);
+            backdrop-filter: blur(7px);
+            justify-content: space-between;
+          }
+          .contact-main-info-thq-text18-elm {
+            fill: var(--dl-color-theme-primary1);
+            color: var(--dl-color-theme-primary1);
+            width: 20%;
+            font-size: 16px;
+            align-self: center;
+            font-style: normal;
+            font-family: '' Inter '';
+            font-weight: 500;
+            margin-left: var(--dl-layout-space-unit);
+            border-color: var(--dl-color-theme-neutral-dark);
+            padding-left: var(--dl-layout-space-halfunit);
+            border-radius: var(--dl-layout-radius-buttonradius);
+            padding-right: var(--dl-layout-space-halfunit);
+            letter-spacing: 1.2px;
+          }
+          .contact-main-info-thq-text20-elm {
+            fill: var(--dl-color-theme-primary1);
+            color: var(--dl-color-theme-primary1);
+            width: 60%;
+            font-size: 16px;
+            align-self: center;
+            font-style: normal;
+            font-family: '' Inter '';
+            font-weight: 500;
+            border-color: var(--dl-color-theme-neutral-dark);
+            padding-left: var(--dl-layout-space-halfunit);
+            border-radius: var(--dl-layout-radius-buttonradius);
+            padding-right: var(--dl-layout-space-halfunit);
+            animation-name: fadeInDown;
+            letter-spacing: 1.2px;
+            animation-delay: 0s;
+            animation-duration: 1000ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+          }
+          .contact-main-info-fragment1 {
+            display: contents;
+          }
           .contact-main-info-text5 {
             display: inline-block;
             border-color: var(--dl-color-theme-neutral-dark);
             letter-spacing: 1.2px;
+          }
+          .contact-main-info-fragment2 {
+            display: contents;
           }
           .contact-main-info-text6 {
             display: inline-block;
             border-color: var(--dl-color-theme-neutral-dark);
             letter-spacing: 1.2px;
           }
+          .contact-main-info-fragment3 {
+            display: contents;
+          }
           .contact-main-info-text7 {
             display: inline-block;
             border-color: var(--dl-color-theme-neutral-dark);
             letter-spacing: 1.2px;
+          }
+          .contact-main-info-fragment4 {
+            display: contents;
           }
           .contact-main-info-text8 {
             display: inline-block;
@@ -287,6 +357,20 @@ const ContactMainInfo = (props) => {
             }
             .contact-main-info-text4 {
               font-size: 16px;
+            }
+            .contact-main-info-thq-container6-elm {
+              padding-left: 0px;
+              flex-direction: column;
+            }
+            .contact-main-info-thq-text18-elm {
+              width: 100%;
+              font-size: 14px;
+              text-align: center;
+            }
+            .contact-main-info-thq-text20-elm {
+              width: 100%;
+              font-size: 14px;
+              text-align: center;
             }
           }
         `}

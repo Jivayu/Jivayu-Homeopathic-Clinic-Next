@@ -135,7 +135,6 @@ const GoogleProfileRatings = (props) => {
         {`
           .google-profile-ratings-container1 {
             gap: 2px;
-            width: 100%;
             height: 100%;
             display: flex;
             box-shadow: -10px -15px 25px 0px rgba(43, 97, 70, 0.22);
@@ -149,11 +148,11 @@ const GoogleProfileRatings = (props) => {
             padding-right: 0px;
             flex-direction: row;
             padding-bottom: var(--dl-layout-space-halfunit);
+            backdrop-filter: blur(5px);
             justify-content: flex-end;
             background-color: rgba(255, 255, 255, 0.4);
             border-top-width: 0.5px;
             border-left-width: 1px;
-            border-right-width: 0px;
             border-bottom-width: 0.5px;
             border-top-left-radius: 50px;
             border-top-right-radius: var(--dl-layout-radius-buttonradius);
@@ -232,8 +231,8 @@ const GoogleProfileRatings = (props) => {
             align-self: center;
             font-style: normal;
             text-align: center;
-            font-family: 'Poppins';
-            font-weight: 400;
+            font-family: 'Inter';
+            font-weight: 300;
             line-height: 1.4;
             padding-top: 4px;
             border-color: rgba(64, 145, 108, 0.1);
@@ -285,7 +284,7 @@ const GoogleProfileRatings = (props) => {
             height: 40px;
             display: flex;
             align-self: center;
-            box-shadow: -10px -10px 25px 0px rgba(68, 138, 114, 0.41);
+            box-shadow: -5px -3px 10px 1px rgba(68, 138, 114, 0.41);
             align-items: center;
             border-color: var(--dl-color-theme-accent1);
             border-style: double;
@@ -335,14 +334,14 @@ const GoogleProfileRatings = (props) => {
             align-self: center;
             transition: 0.5s;
             align-items: center;
-            border-color: rgba(64, 145, 108, 0.1);
+            border-color: rgba(64, 145, 108, 0.35);
             border-width: 1px;
             padding-left: var(--dl-layout-space-unit);
             border-radius: var(--dl-layout-radius-buttonradius);
             padding-right: var(--dl-layout-space-unit);
             flex-direction: column;
+            backdrop-filter: blur(5px);
             justify-content: center;
-            background-color: rgba(220, 21, 205, 0.14);
           }
           .google-profile-ratings-container9:hover {
             transform: scale(0.8);
@@ -374,12 +373,16 @@ const GoogleProfileRatings = (props) => {
           .google-profile-ratings-text15 {
             fill: var(--dl-color-theme-primary1);
             color: var(--dl-color-theme-primary1);
-            font-size: 14px;
+            font-size: 12px;
             align-self: center;
+            font-style: normal;
             text-align: center;
-            font-family: 'PoiretOne-Regular';
+            font-family: 'Inter';
+            font-weight: 400;
             line-height: 1.4;
             letter-spacing: 1.1px;
+            text-transform: none;
+            text-decoration: none;
           }
           .google-profile-ratings-text16 {
             display: inline-block;
@@ -388,7 +391,7 @@ const GoogleProfileRatings = (props) => {
           }
           .google-profile-ratings-text17 {
             display: inline-block;
-            font-weight: 700;
+            font-weight: 300;
             line-height: 1.6;
           }
           .google-profile-ratings-text18 {

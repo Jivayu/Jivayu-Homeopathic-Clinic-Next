@@ -665,7 +665,8 @@ const ContactDesktop = (props) => {
           }
           .contact-desktop-text17 {
             display: inline-block;
-            font-weight: 700;
+            font-weight: 300;
+            line-height: 1.6;
           }
           .contact-desktop-text18 {
             display: inline-block;

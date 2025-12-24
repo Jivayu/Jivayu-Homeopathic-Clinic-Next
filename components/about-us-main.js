@@ -513,7 +513,8 @@ const AboutUsMain = (props) => {
           }
           .about-us-main-text21 {
             display: inline-block;
-            font-weight: 700;
+            font-weight: 300;
+            line-height: 1.6;
           }
           .about-us-main-text22 {
             display: inline-block;

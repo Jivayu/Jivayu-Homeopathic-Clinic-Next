@@ -7,8 +7,7 @@ export default function MyApp({ Component, pageProps }) {
     <NextIntlProvider messages={pageProps?.messages}>
       <GlobalProvider>
         <Component {...pageProps} />
-        
-        </GlobalProvider>
+      </GlobalProvider>
     </NextIntlProvider>
   )
 }

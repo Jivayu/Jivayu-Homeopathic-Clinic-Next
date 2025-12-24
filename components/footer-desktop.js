@@ -39,7 +39,7 @@ const FooterDesktop = (props) => {
           </div>
           <div className="footer-desktop-container15">
             <div className="footer-desktop-container16">
-              <div className="footer-desktop-container17">
+              <div className="footer-desktop-container17 footer-menu-links">
                 <span className="footer-desktop-text13">
                   {props.text53 ?? (
                     <Fragment>
@@ -54,7 +54,7 @@ const FooterDesktop = (props) => {
                 rel="noreferrer noopener"
                 className="footer-desktop-link2"
               >
-                <div className="footer-desktop-container18">
+                <div className="footer-desktop-container18 footer-menu-links">
                   <span className="footer-desktop-text14">
                     {props.text213 ?? (
                       <Fragment>
@@ -69,12 +69,12 @@ const FooterDesktop = (props) => {
             </div>
             <div className="footer-desktop-container19">
               <a
-                href="https://jivayu.in/homeopathic-doctor"
+                href="https://jivayu.in/about-us"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="footer-desktop-link3"
               >
-                <div className="footer-desktop-container20">
+                <div className="footer-desktop-container20 footer-menu-links">
                   <span className="footer-desktop-text15">
                     {props.text52 ?? (
                       <Fragment>
@@ -90,7 +90,7 @@ const FooterDesktop = (props) => {
                 rel="noreferrer noopener"
                 className="footer-desktop-link4"
               >
-                <div className="footer-desktop-container21">
+                <div className="footer-desktop-container21 footer-menu-links">
                   <span className="footer-desktop-text16">
                     {props.text212 ?? (
                       <Fragment>
@@ -110,7 +110,7 @@ const FooterDesktop = (props) => {
                 rel="noreferrer noopener"
                 className="footer-desktop-link5"
               >
-                <div className="footer-desktop-container23">
+                <div className="footer-desktop-container23 footer-menu-links">
                   <span className="footer-desktop-text17">
                     {props.text521 ?? (
                       <Fragment>
@@ -122,7 +122,7 @@ const FooterDesktop = (props) => {
                   </span>
                 </div>
               </a>
-              <div className="footer-desktop-container24">
+              <div className="footer-desktop-container24 footer-menu-links">
                 <span className="footer-desktop-text18">
                   {props.text2121 ?? (
                     <Fragment>
@@ -136,12 +136,12 @@ const FooterDesktop = (props) => {
             </div>
             <div className="footer-desktop-container25">
               <a
-                href="https://jivayu.in/clinic-location-in-nagpur"
+                href="https://jivayu.in/contacts"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="footer-desktop-link6"
               >
-                <div className="footer-desktop-container26">
+                <div className="footer-menu-links">
                   <span className="footer-desktop-text19">
                     {props.text5211 ?? (
                       <Fragment>
@@ -153,7 +153,7 @@ const FooterDesktop = (props) => {
                   </span>
                 </div>
               </a>
-              <div className="footer-desktop-container27">
+              <div className="footer-desktop-container27 footer-menu-links">
                 <span className="footer-desktop-text20">
                   {props.text21211 ?? (
                     <Fragment>
@@ -677,32 +677,6 @@ const FooterDesktop = (props) => {
           .footer-desktop-link6 {
             display: contents;
           }
-          .footer-desktop-container26 {
-            flex: 0 0 auto;
-            width: 40%;
-            height: 30px;
-            display: flex;
-            transition: 0.3s;
-            align-items: center;
-            border-color: var(--dl-color-theme-primary1);
-            border-width: 1px;
-            border-radius: var(--dl-layout-radius-radius4);
-            backdrop-filter: blur(15px);
-            justify-content: center;
-            text-decoration: none;
-            background-color: rgba(0, 0, 0, 0.48);
-            border-top-left-radius: var(--dl-layout-radius-buttonradius);
-            border-top-right-radius: 0;
-            border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
-            border-bottom-right-radius: 0;
-          }
-          .footer-desktop-container26:hover {
-            transform: scaleX(0.98) scaleY(0.98) scaleZ(0.98);
-            box-shadow: -3px 3px 15px 0px rgba(212, 212, 212, 0.15);
-            border-color: rgba(238, 10, 231, 0.27);
-            border-style: groove;
-            border-width: 0.6px;
-          }
           .footer-desktop-text19 {
             fill: var(--dl-color-theme-primary1);
             color: #ffffff;
@@ -1100,9 +1074,6 @@ const FooterDesktop = (props) => {
             .footer-desktop-text18 {
               font-style: normal;
               font-weight: 300;
-            }
-            .footer-desktop-container26 {
-              width: 45%;
             }
             .footer-desktop-text19 {
               font-style: normal;

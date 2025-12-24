@@ -24,7 +24,7 @@ const HeroDesktop = (props) => {
               <div className="hero-desktop-container16">
                 <Slider rootClassName="sliderroot-class-name1"></Slider>
               </div>
-              <div className="hero-desktop-container17">
+              <div priority="true" className="hero-desktop-container17">
                 <img
                   alt="image"
                   sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
@@ -447,7 +447,7 @@ const HeroDesktop = (props) => {
         {`
           .hero-desktop-container10 {
             width: 100vw;
-            height: 850px;
+            height: 800px;
             display: flex;
             transform: scale(0.95);
             box-shadow: -5px -15px 30px 0px rgba(51, 101, 77, 0.44);
@@ -650,7 +650,8 @@ const HeroDesktop = (props) => {
           }
           .hero-desktop-text15 {
             display: inline-block;
-            font-weight: 700;
+            font-weight: 300;
+            line-height: 1.6;
           }
           .hero-desktop-text16 {
             display: inline-block;
@@ -942,7 +943,8 @@ const HeroDesktop = (props) => {
           }
           .hero-desktop-text29 {
             display: inline-block;
-            font-weight: 700;
+            font-weight: 300;
+            line-height: 1.6;
           }
           .hero-desktop-text30 {
             display: inline-block;
@@ -1146,7 +1148,7 @@ const HeroDesktop = (props) => {
             width: 90%;
             display: flex;
             align-self: stretch;
-            box-shadow: 0px -15px 25px 0px rgba(43, 97, 70, 0.22);
+            box-shadow: -3px 3px 6px -1px rgba(4, 4, 4, 0.2);
             align-items: center;
             padding-top: var(--dl-layout-space-halfunit);
             border-color: rgba(220, 21, 205, 0.4);
@@ -1160,8 +1162,8 @@ const HeroDesktop = (props) => {
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.4);
             border-top-width: 1px;
-            border-left-width: 1px;
-            border-right-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 1px;
             border-bottom-width: 1px;
             border-top-left-radius: var(--dl-layout-radius-buttonradius);
             border-top-right-radius: var(--dl-layout-radius-buttonradius);
@@ -1340,7 +1342,7 @@ const HeroDesktop = (props) => {
             width: 90%;
             display: flex;
             align-self: stretch;
-            box-shadow: 0px -15px 25px 0px rgba(43, 97, 70, 0.22);
+            box-shadow: -3px 3px 6px -1px rgba(4, 4, 4, 0.2);
             align-items: center;
             padding-top: var(--dl-layout-space-halfunit);
             border-color: rgba(220, 21, 205, 0.4);
@@ -1354,8 +1356,8 @@ const HeroDesktop = (props) => {
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.4);
             border-top-width: 1px;
-            border-left-width: 1px;
-            border-right-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 1px;
             border-bottom-width: 1px;
             border-top-left-radius: var(--dl-layout-radius-buttonradius);
             border-top-right-radius: var(--dl-layout-radius-buttonradius);
@@ -1530,7 +1532,7 @@ const HeroDesktop = (props) => {
             width: 90%;
             display: flex;
             align-self: stretch;
-            box-shadow: 0px -15px 25px 0px rgba(43, 97, 70, 0.22);
+            box-shadow: -3px 3px 6px -1px rgba(4, 4, 4, 0.2);
             align-items: center;
             padding-top: var(--dl-layout-space-halfunit);
             border-color: rgba(220, 21, 205, 0.4);
@@ -1541,11 +1543,10 @@ const HeroDesktop = (props) => {
             padding-right: 0px;
             flex-direction: column;
             padding-bottom: var(--dl-layout-space-halfunit);
-            justify-content: center;
             background-color: rgba(255, 255, 255, 0.4);
             border-top-width: 1px;
-            border-left-width: 1px;
-            border-right-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 1px;
             border-bottom-width: 1px;
             border-top-left-radius: var(--dl-layout-radius-buttonradius);
             border-top-right-radius: 50px;
@@ -1728,6 +1729,7 @@ const HeroDesktop = (props) => {
             fill: var(--dl-color-theme-neutral-dark);
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
+            box-shadow: -3px 3px 5px -1px rgba(4, 4, 4, 0.3);
             font-style: normal;
             font-family: 'Inter';
             font-weight: 500;
@@ -1750,6 +1752,7 @@ const HeroDesktop = (props) => {
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
             align-self: center;
+            box-shadow: -3px 3px 5px -1px rgba(4, 4, 4, 0.3);
             font-style: normal;
             text-align: center;
             font-family: 'Inter';
@@ -1766,6 +1769,7 @@ const HeroDesktop = (props) => {
             fill: var(--dl-color-theme-neutral-dark);
             color: var(--dl-color-theme-neutral-dark);
             font-size: 12px;
+            box-shadow: -3px 3px 5px -1px rgba(4, 4, 4, 0.3);
             font-style: normal;
             font-family: 'Inter';
             font-weight: 500;

@@ -15,17 +15,24 @@ const FooterMobile = (props) => {
               <Slider rootClassName="sliderroot-class-name5"></Slider>
             </div>
             <ul className="footer-mobile-ul1 list">
-              <li className="footer-mobile-li1 list-item">
-                <span className="footer-mobile-text10">
-                  Rajiv Nagar, Beside Indian Auto Gas Station
-                </span>
-                <span className="footer-mobile-text11">
-                  Deep Enterprise Buldng
-                </span>
-                <span className="footer-mobile-text12">
-                  Hingna Road, Nagpur, 440016
-                </span>
-              </li>
+              <a
+                href="https://maps.app.goo.gl/oDUuTMEyetq2WB6Q6"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="footer-mobile-link10"
+              >
+                <li className="footer-mobile-li1 list-item">
+                  <span className="footer-mobile-text10">
+                    Rajiv Nagar, Beside Indian Auto Gas Station
+                  </span>
+                  <span className="footer-mobile-text11">
+                    Deep Enterprise Buldng
+                  </span>
+                  <span className="footer-mobile-text12">
+                    Hingna Road, Nagpur, 440016
+                  </span>
+                </li>
+              </a>
               <li className="footer-mobile-li2 list-item"></li>
               <li className="footer-mobile-li3 list-item"></li>
             </ul>
@@ -71,7 +78,7 @@ const FooterMobile = (props) => {
                     href={props.textUrl21}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="footer-mobile-link10"
+                    className="footer-mobile-link11"
                   >
                     {props.text21 ?? (
                       <Fragment>
@@ -85,10 +92,10 @@ const FooterMobile = (props) => {
               </div>
               <div className="footer-mobile-container20">
                 <a
-                  href="https://jivayu.in/homeopathic-doctor"
+                  href="https://jivayu.in/about-us"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link11"
+                  className="footer-mobile-link12"
                 >
                   <div className="footer-mobile-container21">
                     <span className="footer-mobile-text20">
@@ -104,7 +111,7 @@ const FooterMobile = (props) => {
                   href="https://www.instagram.com/jivayu.in?igsh=MTVnaWJmYWc3Nm5ocQ=="
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link12"
+                  className="footer-mobile-link13"
                 >
                   <div className="footer-mobile-container22">
                     <span className="footer-mobile-text21">
@@ -124,7 +131,7 @@ const FooterMobile = (props) => {
                   href="https://www.google.com/search?q=jivayu+homeoapthic+clinic&amp;rlz=1C1ONGR_enIN1065IN1065&amp;oq=&amp;gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQg5MTY3ajBqN6gCCLACAQ&amp;sourceid=chrome&amp;ie=UTF-8"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link13"
+                  className="footer-mobile-link14"
                 >
                   <div className="footer-mobile-container24">
                     <span className="footer-mobile-text22">
@@ -142,7 +149,7 @@ const FooterMobile = (props) => {
                   href="https://www.facebook.com/jivayu.in"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link14"
+                  className="footer-mobile-link15"
                 >
                   <div className="footer-mobile-container25">
                     <span className="footer-mobile-text23">
@@ -159,12 +166,12 @@ const FooterMobile = (props) => {
               </div>
               <div className="footer-mobile-container26">
                 <a
-                  href="https://jivayu.in/clinic-location-in-nagpur"
+                  href="https://jivayu.in/contacts"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link15"
+                  className="footer-mobile-link16"
                 >
-                  <div className="footer-mobile-container27">
+                  <div className="footer-mobile-container27 footer-menu-links">
                     <span className="footer-mobile-text24">
                       {props.text56 ?? (
                         <Fragment>
@@ -176,12 +183,12 @@ const FooterMobile = (props) => {
                     </span>
                   </div>
                 </a>
-                <div className="footer-mobile-container28">
+                <div className="footer-mobile-container28 footer-menu-links">
                   <a
                     href={props.textUrl216}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="footer-mobile-link16"
+                    className="footer-mobile-link17"
                   >
                     {props.text216 ?? (
                       <Fragment>
@@ -200,7 +207,7 @@ const FooterMobile = (props) => {
                   href={props.textUrl}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link17"
+                  className="footer-mobile-link18"
                 >
                   {props.text ?? (
                     <Fragment>
@@ -216,7 +223,7 @@ const FooterMobile = (props) => {
                   href={props.textUrl1}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link18"
+                  className="footer-mobile-link19"
                 >
                   {props.text1 ?? (
                     <Fragment>
@@ -230,7 +237,7 @@ const FooterMobile = (props) => {
                   href={props.textUrl2}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="footer-mobile-link19"
+                  className="footer-mobile-link20"
                 >
                   {props.text2 ?? (
                     <Fragment>
@@ -335,12 +342,16 @@ const FooterMobile = (props) => {
             list-style-image: none;
             list-style-position: outside;
           }
+          .footer-mobile-link10 {
+            display: contents;
+          }
           .footer-mobile-li1 {
             font-size: 10px;
             align-self: flex-start;
             text-align: center;
             line-height: 1.2;
             padding-bottom: 2px;
+            text-decoration: none;
           }
           .footer-mobile-text10 {
             fill: var(--dl-color-theme-neutral-light);
@@ -624,7 +635,7 @@ const FooterMobile = (props) => {
             width: 45%;
             border-color: var(--dl-color-theme-primary2);
           }
-          .footer-mobile-link10 {
+          .footer-mobile-link11 {
             font-size: 10px;
           }
           .footer-mobile-container20 {
@@ -636,7 +647,7 @@ const FooterMobile = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .footer-mobile-link11 {
+          .footer-mobile-link12 {
             display: contents;
           }
           .footer-mobile-container21 {
@@ -664,7 +675,7 @@ const FooterMobile = (props) => {
           .footer-mobile-text20 {
             font-size: 10px;
           }
-          .footer-mobile-link12 {
+          .footer-mobile-link13 {
             display: contents;
           }
           .footer-mobile-container22 {
@@ -701,7 +712,7 @@ const FooterMobile = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .footer-mobile-link13 {
+          .footer-mobile-link14 {
             display: contents;
           }
           .footer-mobile-container24 {
@@ -729,7 +740,7 @@ const FooterMobile = (props) => {
           .footer-mobile-text22 {
             font-size: 10px;
           }
-          .footer-mobile-link14 {
+          .footer-mobile-link15 {
             display: contents;
           }
           .footer-mobile-container25 {
@@ -766,7 +777,7 @@ const FooterMobile = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .footer-mobile-link15 {
+          .footer-mobile-link16 {
             display: contents;
           }
           .footer-mobile-container27 {
@@ -815,7 +826,7 @@ const FooterMobile = (props) => {
           .footer-mobile-container28:hover {
             width: 45%;
           }
-          .footer-mobile-link16 {
+          .footer-mobile-link17 {
             font-size: 10px;
           }
           .footer-mobile-container29 {
@@ -845,7 +856,7 @@ const FooterMobile = (props) => {
             border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
             border-bottom-right-radius: 0;
           }
-          .footer-mobile-link17 {
+          .footer-mobile-link18 {
             fill: var(--dl-color-theme-accent1);
             color: var(--dl-color-theme-accent1);
             font-size: 10px;
@@ -866,7 +877,7 @@ const FooterMobile = (props) => {
             border-left-width: 0px;
             border-right-width: 0px;
           }
-          .footer-mobile-link18 {
+          .footer-mobile-link19 {
             fill: var(--dl-color-theme-accent1);
             color: var(--dl-color-theme-accent1);
             font-size: 10px;
@@ -890,7 +901,7 @@ const FooterMobile = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: var(--dl-layout-radius-buttonradius);
           }
-          .footer-mobile-link19 {
+          .footer-mobile-link20 {
             fill: var(--dl-color-theme-accent1);
             color: var(--dl-color-theme-accent1);
             font-size: 10px;
@@ -1203,7 +1214,7 @@ const FooterMobile = (props) => {
               border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
               border-bottom-right-radius: var(--dl-layout-radius-radius4);
             }
-            .footer-mobile-link10 {
+            .footer-mobile-link11 {
               fill: var(--dl-color-theme-neutral-light);
               color: #ffffff;
               font-size: 12px;
@@ -1392,7 +1403,7 @@ const FooterMobile = (props) => {
               border-bottom-left-radius: var(--dl-layout-radius-buttonradius);
               border-bottom-right-radius: var(--dl-layout-radius-radius4);
             }
-            .footer-mobile-link16 {
+            .footer-mobile-link17 {
               fill: var(--dl-color-theme-neutral-light);
               color: #ffffff;
               font-size: 12px;
@@ -1410,7 +1421,7 @@ const FooterMobile = (props) => {
               backdrop-filter: blur(5px);
               background-color: rgba(247, 242, 242, 0.3);
             }
-            .footer-mobile-link17 {
+            .footer-mobile-link18 {
               fill: var(--dl-color-theme-accent2);
               color: #ffffff;
               font-style: normal;
@@ -1422,7 +1433,7 @@ const FooterMobile = (props) => {
               backdrop-filter: blur(5px);
               background-color: rgba(247, 242, 242, 0.3);
             }
-            .footer-mobile-link18 {
+            .footer-mobile-link19 {
               fill: var(--dl-color-theme-accent2);
               color: #ffffff;
               font-style: normal;
@@ -1434,7 +1445,7 @@ const FooterMobile = (props) => {
               backdrop-filter: blur(5px);
               background-color: rgba(247, 242, 242, 0.3);
             }
-            .footer-mobile-link19 {
+            .footer-mobile-link20 {
               fill: var(--dl-color-theme-accent2);
               color: #ffffff;
               font-style: normal;
